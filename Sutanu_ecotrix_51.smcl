@@ -1,0 +1,329 @@
+{smcl}
+{com}{sf}{ul off}{txt}{.-}
+      name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\HP\OneDrive\Documents\ECOTRIX PROJECT\Sir practical\Sutanu_ecotrix_51.smcl
+  {txt}log type:  {res}smcl
+ {txt}opened on:  {res}28 Dec 2024, 12:32:16
+
+{com}. use "C:\Users\HP\OneDrive\Documents\ECOTRIX PROJECT\ecotrix_dataset_final.dta", clear
+
+. regress gni_1 GDP_current_1 gni_per_capita_1 GDP_growth_annual_1 inflation_GDP_deflator_1 gross_capital_formation_1 debt_service_GNI_1 FDI_net_inflows_1 GDP_per_capita_US_1 net_FDI_1 inflation_consumer_prices_1 _Inflation_GDP_deflator_2 _Inflation_consumer_prices_2
+
+{txt}      Source {c |}       SS           df       MS      Number of obs   ={res}       217
+{txt}{hline 13}{c +}{hline 34}   F(12, 204)      = {res}    42.60
+{txt}       Model {c |} {res} 338.207685        12  28.1839738   {txt}Prob > F        ={res}    0.0000
+{txt}    Residual {c |} {res} 134.972234       204  .661628598   {txt}R-squared       ={res}    0.7148
+{txt}{hline 13}{c +}{hline 34}   Adj R-squared   ={res}    0.6980
+{txt}       Total {c |} {res} 473.179919       216  2.19064777   {txt}Root MSE        =   {res} .81341
+
+{txt}{hline 29}{c TT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{col 1}                       gni_1{col 30}{c |}      Coef.{col 42}   Std. Err.{col 54}      t{col 62}   P>|t|{col 70}     [95% Con{col 83}f. Interval]
+{hline 29}{c +}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{space 15}GDP_current_1 {c |}{col 30}{res}{space 2} .6562984{col 42}{space 2} .0531379{col 53}{space 1}   12.35{col 62}{space 3}0.000{col 70}{space 4} .5515285{col 83}{space 3} .7610683
+{txt}{space 12}gni_per_capita_1 {c |}{col 30}{res}{space 2} .7699265{col 42}{space 2} .0542537{col 53}{space 1}   14.19{col 62}{space 3}0.000{col 70}{space 4} .6629566{col 83}{space 3} .8768965
+{txt}{space 9}GDP_growth_annual_1 {c |}{col 30}{res}{space 2}-.0616439{col 42}{space 2} .0780882{col 53}{space 1}   -0.79{col 62}{space 3}0.431{col 70}{space 4}-.2156073{col 83}{space 3} .0923196
+{txt}{space 4}inflation_GDP_deflator_1 {c |}{col 30}{res}{space 2} .0016776{col 42}{space 2} .0667827{col 53}{space 1}    0.03{col 62}{space 3}0.980{col 70}{space 4}-.1299952{col 83}{space 3} .1333504
+{txt}{space 3}gross_capital_formation_1 {c |}{col 30}{res}{space 2} .0534563{col 42}{space 2} .0422107{col 53}{space 1}    1.27{col 62}{space 3}0.207{col 70}{space 4}-.0297689{col 83}{space 3} .1366815
+{txt}{space 10}debt_service_GNI_1 {c |}{col 30}{res}{space 2} .0202993{col 42}{space 2} .0409397{col 53}{space 1}    0.50{col 62}{space 3}0.621{col 70}{space 4}  -.06042{col 83}{space 3} .1010185
+{txt}{space 11}FDI_net_inflows_1 {c |}{col 30}{res}{space 2}-.0185042{col 42}{space 2} .0619139{col 53}{space 1}   -0.30{col 62}{space 3}0.765{col 70}{space 4}-.1405775{col 83}{space 3} .1035691
+{txt}{space 9}GDP_per_capita_US_1 {c |}{col 30}{res}{space 2}-.4836093{col 42}{space 2} .0666172{col 53}{space 1}   -7.26{col 62}{space 3}0.000{col 70}{space 4}-.6149559{col 83}{space 3}-.3522626
+{txt}{space 19}net_FDI_1 {c |}{col 30}{res}{space 2} .0046336{col 42}{space 2} .0643646{col 53}{space 1}    0.07{col 62}{space 3}0.943{col 70}{space 4}-.1222716{col 83}{space 3} .1315389
+{txt}{space 1}inflation_consumer_prices_1 {c |}{col 30}{res}{space 2} .0196777{col 42}{space 2} .0645002{col 53}{space 1}    0.31{col 62}{space 3}0.761{col 70}{space 4}-.1074949{col 83}{space 3} .1468502
+{txt}{space 3}_Inflation_GDP_deflator_2 {c |}{col 30}{res}{space 2} .0508027{col 42}{space 2} .0684091{col 53}{space 1}    0.74{col 62}{space 3}0.459{col 70}{space 4}-.0840768{col 83}{space 3} .1856823
+{txt}_Inflation_consumer_prices_2 {c |}{col 30}{res}{space 2} .0303152{col 42}{space 2} .0584043{col 53}{space 1}    0.52{col 62}{space 3}0.604{col 70}{space 4}-.0848384{col 83}{space 3} .1454687
+{txt}{space 23}_cons {c |}{col 30}{res}{space 2}-.1270743{col 42}{space 2} .6074512{col 53}{space 1}   -0.21{col 62}{space 3}0.835{col 70}{space 4}-1.324762{col 83}{space 3} 1.070613
+{txt}{hline 29}{c BT}{hline 11}{hline 11}{hline 9}{hline 8}{hline 13}{hline 12}
+{res}
+{com}. rvfplot
+{res}
+{com}. predict resid, residuals
+{txt}(54 missing values generated)
+
+{com}. rvfplot
+{res}
+{com}. hettest resid
+
+{txt}Breusch-Pagan / Cook-Weisberg test for heteroskedasticity 
+         Ho: Constant variance
+{p 9 20}Variables: resid
+
+{col 10}chi2({res}1{txt}){col 23}={res}    47.12
+{txt}{col 10}Prob > chi2{col 23}={res}   0.0000
+
+{com}. scatter gni_1 GDP_current_1
+{res}
+{com}. scatter gni_1 gni_per_capita_1
+{res}
+{com}. scatter gni_1 GDP_growth_annual_1
+{res}
+{com}. scatter gni_1 inflation_GDP_deflator_1
+{res}
+{com}. scatter gni_1 gross_capital_formation_1
+{res}
+{com}. scatter gni_1 debt_service_GNI_1
+{res}
+{com}. scatter gni_1 FDI_net_inflows_1
+{res}
+{com}. scatter gni_1 GDP_per_capita_US_1
+{res}
+{com}. scatter gni_1 net_FDI_1
+{res}
+{com}. scatter gni_1 inflation_consumer_prices_1
+{res}
+{com}. scatter gni_1 _Inflation_GDP_deflator_2
+{res}
+{com}. scatter gni_1 _Inflation_consumer_prices_2
+{res}
+{com}. estat ic
+
+Akaike's information criterion and Bayesian information criterion
+
+{txt}{hline 13}{c TT}{hline 63}
+       Model {c |}        Obs  ll(null)  ll(model)      df         AIC        BIC
+{hline 13}{c +}{hline 63}
+{ralign 12:.}{col 14}{c |}{res}{col 16}       217{col 27}-392.4939{col 38}-256.3908{col 49}    13{col 58} 538.7816{col 69} 582.7203
+{txt}{hline 13}{c BT}{hline 63}
+{p 15 21 2}
+Note: N=Obs used in calculating BIC; see {helpb bic_note:[R] BIC note}.
+{p_end}
+
+{com}. qnorm resid
+{res}
+{com}. swilk resid
+
+                   {txt}Shapiro-Wilk W test for normal data
+
+    Variable {c |}        Obs{col 33}W{col 45}V{col 55}z       Prob>z
+{hline 13}{c +}{hline 54}
+       resid {c |} {res}       217    0.79275     33.199     8.092    0.00000
+
+{com}. predict leverage, hat
+{txt}(54 missing values generated)
+
+{com}. predict cooks, cooksd
+{txt}(54 missing values generated)
+
+{com}. scatter leverage resid
+{res}
+{com}. scatter leverage resid cooks
+{res}
+{com}. oneway gni_1 GDP_current_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 473.179919    210   2.25323771
+{txt} Within groups     {res}          0      6            0
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{com}. oneway gni_1 gni_per_capita_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 453.885823    189   2.40151229      3.36     0.0002
+{txt} Within groups     {res}  19.294096     27   .714596148
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{txt}Bartlett's test for equal variances:  chi2({res}8{txt}) = {res} 10.4038{txt}  Prob>chi2 = {res}0.238
+
+{txt}note: Bartlett's test performed on cells with positive variance:
+      180 single-observation cells not used
+      1 multiple-observation cells not used
+
+{com}. oneway gni_1 GDP_growth_annual_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 267.154043     97   2.75416539      1.59     0.0080
+{txt} Within groups     {res} 206.025876    119   1.73130988
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{txt}Bartlett's test for equal variances:  chi2({res}54{txt}) = {res}106.0438{txt}  Prob>chi2 = {res}0.000
+
+{txt}note: Bartlett's test performed on cells with positive variance:
+      42 single-observation cells not used
+      1 multiple-observation cells not used
+
+{com}. oneway gni_1 inflation_GDP_deflator_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 307.328526    119   2.58259266      1.51     0.0179
+{txt} Within groups     {res} 165.851393     97   1.70980817
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{txt}Bartlett's test for equal variances:  chi2({res}51{txt}) = {res} 96.2786{txt}  Prob>chi2 = {res}0.000
+
+{txt}note: Bartlett's test performed on cells with positive variance:
+      67 single-observation cells not used
+      1 multiple-observation cells not used
+
+{com}. oneway gni_1 gross_capital_formation_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 191.713837    125   1.53371069      0.50     0.9999
+{txt} Within groups     {res} 281.466082     91   3.09303387
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{txt}Bartlett's test for equal variances:  chi2({res}41{txt}) = {res} 86.7888{txt}  Prob>chi2 = {res}0.000
+
+{txt}note: Bartlett's test performed on cells with positive variance:
+      84 single-observation cells not used
+
+{com}. oneway gni_1 debt_service_GNI_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res}  103.59919     75   1.38132253      0.53     0.9987
+{txt} Within groups     {res} 369.580729    141   2.62113993
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{txt}Bartlett's test for equal variances:  chi2({res}25{txt}) = {res} 49.7248{txt}  Prob>chi2 = {res}0.002
+
+{txt}note: Bartlett's test performed on cells with positive variance:
+      50 single-observation cells not used
+
+{com}. oneway gni_1 FDI_net_inflows_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 364.761331    197   1.85158036      0.32     1.0000
+{txt} Within groups     {res} 108.418588     19   5.70624148
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{com}. oneway gni_1 GDP_per_capita_US_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 468.970796    209    2.2438794      3.73     0.0343
+{txt} Within groups     {res}  4.2091235      7   .601303357
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{com}. oneway gni_1 net_FDI_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 317.315434    188   1.68784805      0.30     1.0000
+{txt} Within groups     {res} 155.864485     28   5.56658875
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{com}. oneway gni_1 inflation_consumer_prices_1
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 201.478807     93   2.16643879      0.98     0.5361
+{txt} Within groups     {res} 271.701112    123   2.20895213
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{txt}Bartlett's test for equal variances:  chi2({res}47{txt}) = {res} 96.7791{txt}  Prob>chi2 = {res}0.000
+
+{txt}note: Bartlett's test performed on cells with positive variance:
+      46 single-observation cells not used
+
+{com}. oneway gni_1 _Inflation_GDP_deflator_2
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res}  436.46726    208   2.09840029      0.46     0.9703
+{txt} Within groups     {res} 36.7126595      8   4.58908244
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{com}. oneway gni_1 _Inflation_consumer_prices_2
+
+                        {txt}Analysis of Variance
+    Source              SS         df      MS            F     Prob > F
+{hline 72}
+Between groups     {res} 296.768844    188   1.57855768      0.25     1.0000
+{txt} Within groups     {res} 176.411075     28   6.30039552
+{txt}{hline 72}
+    Total          {res} 473.179919    216   2.19064777
+
+{com}. pwcorr
+{txt}(country ignored because string variable)
+(CountryCode ignored because string variable)
+
+             {c |}    gni_1 GDP_cu~1 gni_pe~1 GDP_gr~1 infl~r_1 gross_~1 debt_s~1
+{hline 13}{c +}{hline 63}
+       gni_1 {c |} {res}  1.0000 
+{txt}GDP_curren~1 {c |} {res}  0.5731   1.0000 
+{txt}gni_per_ca~1 {c |} {res}  0.6821   0.2666   1.0000 
+{txt}GDP_growth~1 {c |} {res}  0.1229   0.0863   0.1497   1.0000 
+{txt}inflatio~r_1 {c |} {res}  0.0053   0.0083  -0.0117   0.1092   1.0000 
+{txt}gross_capi~1 {c |} {res}  0.2583   0.0595   0.3416   0.1739   0.0745   1.0000 
+{txt}debt_servi~1 {c |} {res}  0.2504   0.1362   0.2512   0.2233   0.2456   0.1603   1.0000 
+{txt}FDI_net_in~1 {c |} {res}  0.1297  -0.0269   0.2573   0.2056   0.0936   0.2392   0.3145 
+{txt}GDP_per_ca~1 {c |} {res}  0.3441   0.4199   0.6442   0.0521   0.0116   0.2431   0.1535 
+   {txt}net_FDI_1 {c |} {res} -0.1321  -0.0963  -0.0549  -0.1380   0.0447  -0.1195  -0.2337 
+{txt}inflatio~s_1 {c |} {res}  0.0747   0.0239   0.0410   0.0155   0.2026   0.1749   0.2812 
+{txt}_Inflati~r_2 {c |} {res}  0.2188   0.0249   0.2583   0.0767   0.0720   0.2116   0.4230 
+{txt}_Inflati~s_2 {c |} {res}  0.2853   0.1205   0.2825   0.0448   0.1346   0.1878   0.3821 
+       {txt}resid {c |} {res}  0.5341   0.0000   0.0000  -0.0000  -0.0000  -0.0000  -0.0000 
+    {txt}leverage {c |} {res} -0.3143  -0.1822  -0.4114  -0.3903  -0.3574  -0.2796  -0.2873 
+       {txt}cooks {c |} {res} -0.1971  -0.0065  -0.2294  -0.1726  -0.0020  -0.0443  -0.0136 
+
+             {txt}{c |} FDI_ne~1 GDP_pe~1 net_FD~1 infl~s_1 _Inf~r_2 _Inf~s_2    resid
+{hline 13}{c +}{hline 63}
+FDI_net_in~1 {c |} {res}  1.0000 
+{txt}GDP_per_ca~1 {c |} {res}  0.1610   1.0000 
+   {txt}net_FDI_1 {c |} {res}  0.0145   0.0725   1.0000 
+{txt}inflatio~s_1 {c |} {res}  0.1799   0.0297   0.0047   1.0000 
+{txt}_Inflati~r_2 {c |} {res}  0.0844   0.1445  -0.1166   0.3040   1.0000 
+{txt}_Inflati~s_2 {c |} {res}  0.1913   0.1265  -0.1339   0.2689   0.4855   1.0000 
+       {txt}resid {c |} {res} -0.0000  -0.0000  -0.0000  -0.0000   0.0000  -0.0000   1.0000 
+    {txt}leverage {c |} {res} -0.3469  -0.2989  -0.1770  -0.2423  -0.3259  -0.3359   0.0112 
+       {txt}cooks {c |} {res} -0.0951  -0.0584   0.0481  -0.0118   0.0132  -0.0631  -0.0842 
+
+             {txt}{c |} leverage    cooks
+{hline 13}{c +}{hline 18}
+    leverage {c |} {res}  1.0000 
+       {txt}cooks {c |} {res}  0.3052   1.0000 
+
+{com}. vif
+
+{txt}    Variable {c |}       VIF       1/VIF  
+{hline 13}{c +}{hline 22}
+gni_per_ca~1 {c |} {res}     2.05    0.487867
+{txt}GDP_per_ca~1 {c |} {res}     2.03    0.491519
+{txt}debt_servi~1 {c |} {res}     1.62    0.617337
+{txt}_Inflati~r_2 {c |} {res}     1.50    0.668494
+{txt}_Inflati~s_2 {c |} {res}     1.42    0.703770
+{txt}GDP_curren~1 {c |} {res}     1.29    0.772504
+{txt}FDI_net_in~1 {c |} {res}     1.28    0.784067
+{txt}gross_capi~1 {c |} {res}     1.24    0.804630
+{txt}inflatio~s_1 {c |} {res}     1.23    0.810852
+{txt}{space 3}net_FDI_1 {c |} {res}     1.15    0.868564
+{txt}GDP_growth~1 {c |} {res}     1.13    0.883171
+{txt}inflatio~r_1 {c |} {res}     1.12    0.890667
+{txt}{hline 13}{c +}{hline 22}
+    Mean VIF {c |} {res}     1.42
+
+{com}. log close
+      {txt}name:  {res}<unnamed>
+       {txt}log:  {res}C:\Users\HP\OneDrive\Documents\ECOTRIX PROJECT\Sir practical\Sutanu_ecotrix_51.smcl
+  {txt}log type:  {res}smcl
+ {txt}closed on:  {res}28 Dec 2024, 13:41:58
+{txt}{.-}
+{smcl}
+{txt}{sf}{ul off}
